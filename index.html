@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página da Luiza</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4b0082;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        ul {
+            line-height: 2;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff4500;
+        }
+        #mensagem {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2e8b57;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4b0082;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6a0dad;
+        }
+    </style>
+</head>
+<body>
+    <h1>Luiza</h1>
+    <p>Olá! Meu nome é Luiza, tenho 25 anos e moro em São Paulo. Amo explorar novas culturas, aprender sobre tecnologia e compartilhar experiências. Viajar é minha paixão!</p>
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+    <h2>Meus hobbies</h2>
+    <ul>
+        <li>Viajar</li>
+        <li>Fotografia</li>
+        <li>Ler livros</li>
+    </ul>
+    <h3>Uma imagem representando meu hobby favorito:</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Airplane_Landing_Takeoff.jpg/640px-Airplane_Landing_Takeoff.jpg" alt="Viajar">
+    <h2>Países que quero visitar</h2>
+    <table>
+        <tr>
+            <th>País</th>
+            <th>Imagem</th>
+        </tr>
+        <tr>
+            <td>Japão</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Tokyo_Montage_2015.jpg" alt="Japão" width="200"></td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/GreatWallNearBeijingWinter.jpg" alt="China" width="200"></td>
+        </tr>
+        <tr>
+            <td>Tailândia</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Phuket_Beach_%28437419803%29.jpeg" alt="Tailândia" width="200"></td>
+        </tr>
+    </table>
+    <p>Visite um dos meus sites favoritos: <a href="https://www.tecmundo.com.br" target="_blank">TecMundo</a></p>
+    <script>
+        function mostrarMensagem() {
+            const mensagem = document.getElementById("mensagem");
+            mensagem.innerHTML = "Você é capaz de conquistar o mundo! 🌟";
+        }
+    </script>
+</body>
+</html>
